@@ -1,0 +1,7 @@
+gdown==4.7.1
+lexical_diversity==0.1.1
+scikit_learn==1.2.0
+scipy==1.9.0
+spacy==3.7.1
+en_core_web_sm==3.7.0
+tqdm==4.66.1
