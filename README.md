@@ -16,3 +16,8 @@ python features_extraction/entity_grid.py
 ```
 python features_extraction/rst.py
 ```
+
+### Readability and Text Statisctics
+```
+python features_extraction/rst.py
+```
