@@ -119,26 +119,26 @@ def get_texts_styles(in_file_name: str,
 
     pos_vectorizer, pos_tf = log_counts(pos_data)
     pos_tf_dev = pos_vectorizer.transform(dev_pos_data)
-    with open("processed_data/pos_vectorizer.pkl", "wb") as file:
+    with open("../processed_data/pos_vectorizer.pkl", "wb") as file:
         pickle.dump(pos_vectorizer, file)
-    save_npz("processed_data/pos_tf.npz", pos_tf)
-    save_npz("processed_data/pos_tf_dev.npz", pos_tf_dev)
+    save_npz("../processed_data/pos_tf.npz", pos_tf)
+    save_npz("../processed_data/pos_tf_dev.npz", pos_tf_dev)
 
     shape_vectorizer, shape_tf = log_counts(shape_data)
     shape_tf_dev = shape_vectorizer.transform(dev_shape_data)
-    with open("processed_data/shape_vectorizer.pkl", "wb") as file:
+    with open("../processed_data/shape_vectorizer.pkl", "wb") as file:
         pickle.dump(shape_vectorizer, file)
-    save_npz("processed_data/shape_tf.npz", shape_tf)
-    save_npz("processed_data/shape_tf_dev.npz", shape_tf_dev)
+    save_npz("../processed_data/shape_tf.npz", shape_tf)
+    save_npz("../processed_data/shape_tf_dev.npz", shape_tf_dev)
 
 def main():
-    get_texts_styles("SubtaskA/subtaskA_train_monolingual.jsonl",
-                     "SubtaskA/subtaskA_dev_monolingual.jsonl")
+    get_texts_styles("../SubtaskA/subtaskA_train_monolingual.jsonl",
+                     "../SubtaskA/subtaskA_dev_monolingual.jsonl")
 
-    get_texts_diversities("SubtaskA/subtaskA_train_monolingual.jsonl",
-                          "processed_data/train_diversities.jsonl")
-    get_texts_diversities("SubtaskA/subtaskA_dev_monolingual.jsonl",
-                          "processed_data/dev_diversities.jsonl")
+    get_texts_diversities("../SubtaskA/subtaskA_train_monolingual.jsonl",
+                          "../processed_data/train_diversities.jsonl")
+    get_texts_diversities("../SubtaskA/subtaskA_dev_monolingual.jsonl",
+                          "../processed_data/dev_diversities.jsonl")
 
 if __name__ == "__main__":
     main()
