@@ -9,3 +9,4 @@ allennlp==2.10.1
 sgnlp==0.4.0
 pandas==2.1.4
 tqdm==4.66.1
+textstat==0.7.3
