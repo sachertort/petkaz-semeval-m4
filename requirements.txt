@@ -9,12 +9,9 @@ allennlp==2.10.1
 sgnlp==0.4.0
 pandas==2.1.4
 tqdm==4.66.1
-<<<<<<< HEAD
 textstat==0.7.3
-=======
 datasets==2.10.1
 evaluate==0.4.1
 numpy==1.23.0
 transformers==4.26.1
 torch==1.12.1+cu113
->>>>>>> d0d067a80a8fc78b51a867476a320e6c34b97ca8
