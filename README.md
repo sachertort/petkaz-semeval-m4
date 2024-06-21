@@ -10,7 +10,7 @@
 
 **Main idea:** For our submission to SemEval-2024 Task 8, the monolingual track of Subtask A, which focuses on MGT detection in English across a variety of domains and generative models, we have developed a system that can be categorized as a black-box detector and is based on a combination of embeddings, measures of lexical diversity, and careful selection of the training data (see Figure below). We also present and discuss an extended set of linguistic features, including discourse and stylistic features, that we have experimented with during the development phase of the competition. The main motivation for using such a feature-based approach is that it helps us to focus on the fundamental differences between MGTs and human-written texts (HWTs) rather than capture the specifics of particular models.
 
-![Our Pipeline](scheme_m4.pdf)
+![Our Pipeline](scheme_m4.png)
 
 ## Replication
 
